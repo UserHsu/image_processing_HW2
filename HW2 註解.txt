@@ -1,0 +1,28 @@
+HW2 註解
+環境 -
+1. python version: Python3.12.3
+2. packages used: tkinter, PIL, cv2, numpy, matplotlib.pyplot
+3.installation method: terminal: sudo apt install <package-name>
+
+作業 -
+1.1. average filter: 將3X3 average filter對"pirate A"、 "pirate B"進行濾波，兩者的雜訊皆有所減少，過濾之後的pirate A看起來較pirate B清晰。
+
+1.2. median filter: 將3X3 median filter對"pirate A"、 "pirate B"進行濾波，兩者的雜訊皆有所減少，過濾之後的pirate A看起來較pirate B清晰。且由經過median filter的pirate A是四張圖片中最平滑的。
+
+1.3. laplacian filter: 將laplacian filter應用在最平滑的"pirate A with 3x3 median" ，我發現它會顯示出圖像的邊緣。
+
+2.1. 7x7 arithmetic mean filter: "BarTest.tif"的線條會變得模糊。
+
+2.2. 3x3 arithmetic mean filter: "BarTest.tif"的線條會變得模糊。但相較於"7x7 arithmetic mean filter"的結果清晰。
+
+2.3. 7x7 median image: "BarTest.tif"的線條端點會變得圓潤。
+
+2.4. 3x3 median image: "BarTest.tif"的線條端點會變得圓潤。但沒有"7x7 median image" 的結果圓滑。
+
+3.1. 2D-FFT: 顯示"lenna_gray.tif"在2D-FFT轉換後的頻譜圖。
+
+3.2. phase and amplitude only: 將圖像的magnitude 以及phase，magnitude only都是黑色，phase only則是一片雜訊。
+
+4.1. DFT and IDFT: 按照步驟對"DIP_image.tif" 進行處理顯示每個步驟的圖像。
+
+4.2. 放在 HW2-4(a)
